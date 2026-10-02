@@ -23,7 +23,12 @@ jobs:
           gradle-version: '8.9'
 
       - name: Build APK
-        run: gradle assembleDebug
+        run: gradle :app:assembleDebug --stacktrace
+
+      - name: Check APK
+        run: |
+          echo "Checking APK..."
+          find app/build/outputs -type f -name "*.apk" -print
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
