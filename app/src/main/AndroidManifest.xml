@@ -2,10 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-        android:theme="@style/Theme.App"
-        android:label="ما و شهید گمنام"
-        android:allowBackup="true"
-        android:supportsRtl="true">
+        android:theme="@android:style/Theme.Material.Light.NoActionBar"
+        android:label="ما و شهید گمنام">
 
         <activity
             android:name=".MainActivity"
